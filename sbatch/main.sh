@@ -1,20 +1,20 @@
 #!/bin/bash
 
-#SBATCH -J nowarm_filterlr_small2    # name of job
+#SBATCH -J coop_concept    # name of job
 #SBATCH -c 8                        # number of cpus required per task
 #SBATCH --gres=gpu:1                # number of gpus required
-#SBATCH -D /home/jin749/jinpcb      # set working directory for batch script
-#SBATCH -o /home/jin749/jinpcb/sbatch/slogs/%x_%A_%a.out    # file for batch script's standard output
+#SBATCH -D /home/jin749/Projects/coop_concept     # set working directory for batch script
+#SBATCH -o /home/jin749/Projects/coop_concept/sbatch/slogs/%x_%A_%a.out    # file for batch script's standard output
 #SBATCH --mail-type=BEGIN,END
 #SBATCH --mail-user=jin749@postech.ac.kr
 
-#SBATCH --mem-per-gpu=24G           # memory required per allocated GPU
-#SBATCH -t 0-05:00:00               # time limit
+#SBATCH --mem-per-gpu=12G           # memory required per allocated GPU
+#SBATCH -t 0-10:00:00               # time limit
 #SBATCH -p A5000                    # partition requested
-#SBATCH -a 1-108                      # job array index values
+#SBATCH -a 1-12                      # job array index values
 source /home/jin749/.bashrc
-conda activate pcb
-config=/home/jin749/jinpcb/sbatch/config24.csv
+conda activate coop
+config=/home/jin749/Projects/coop_concept/sbatch/config.csv
 
 echo JOB_ID: ${SLURM_JOB_ID}_${SLURM_ARRAY_TASK_ID} && echo
 echo pwd: 
@@ -23,7 +23,7 @@ echo which python:
 which python && echo
 
 # custom config
-DATA=/hdd/hdd3/jsh/DATA
+DATA=/home/jin749/DATA
 TRAINER=CoOp
 
 DATASET=$(awk -F '[,]' -v task_id=$SLURM_ARRAY_TASK_ID 'NR==task_id {print $1}' $config)
