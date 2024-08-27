@@ -1,0 +1,314 @@
+{
+    "abyssinian": [
+        "fur",
+        "legs",
+        "ears",
+        "tail",
+        "fur"
+    ],
+    "bengal": [
+        "body",
+        "fur",
+        "stripes",
+        "spots",
+        "eyes"
+    ],
+    "birman": [
+        "animal",
+        "fur",
+        "ears",
+        "eyes",
+        "paws"
+    ],
+    "bombay": [
+        "fur",
+        "ears",
+        "tail",
+        "body",
+        "legs",
+        "claws"
+    ],
+    "british shorthair": [
+        "fur",
+        "eyes",
+        "muzzle",
+        "ears",
+        "body",
+        "legs",
+        "head"
+    ],
+    "egyptian mau": [
+        "cat",
+        "body",
+        "ears",
+        "legs",
+        "tail",
+        "coat"
+    ],
+    "maine coon": [
+        "body",
+        "fur",
+        "tail",
+        "ears",
+        "eyes"
+    ],
+    "persian": [
+        "fur",
+        "face",
+        "nose",
+        "eyes",
+        "ears",
+        "legs",
+        "body"
+    ],
+    "ragdoll": [
+        "body",
+        "coat",
+        "eyes",
+        "tail",
+        "ears"
+    ],
+    "russian blue": [
+        "fur",
+        "eyes",
+        "tail",
+        "head",
+        "ears"
+    ],
+    "siamese": [
+        "eyes",
+        "coloration",
+        "body",
+        "head",
+        "ears",
+        "tail"
+    ],
+    "sphynx": [
+        "cat",
+        "hairless",
+        "ears",
+        "legs",
+        "body",
+        "tail",
+        "eyes"
+    ],
+    "american bulldog": [
+        "mammal",
+        "body",
+        "head",
+        "jaw",
+        "snout",
+        "fur",
+        "tail",
+        "build"
+    ],
+    "american pit bull terrier": [
+        "body",
+        "hair",
+        "snout",
+        "head",
+        "jaws",
+        "legs",
+        "tail",
+        "coat"
+    ],
+    "basset hound": [
+        "dog",
+        "ears",
+        "body",
+        "coat",
+        "color",
+        "expression"
+    ],
+    "beagle": [
+        "dog",
+        "ears",
+        "snout",
+        "tail",
+        "size"
+    ],
+    "boxer": [
+        "dog",
+        "coat",
+        "head",
+        "ears",
+        "body",
+        "tail"
+    ],
+    "chihuahua": [
+        "size",
+        "legs",
+        "body",
+        "ears",
+        "head",
+        "snout",
+        "eyes"
+    ],
+    "english cocker spaniel": [
+        "dog",
+        "coat",
+        "tail",
+        "ears",
+        "head",
+        "eyes",
+        "body",
+        "legs"
+    ],
+    "english setter": [
+        "animal",
+        "fur",
+        "ears",
+        "tail",
+        "feet",
+        "eyes"
+    ],
+    "german shorthaired": [
+        "coat",
+        "color",
+        "eyes",
+        "ears",
+        "body",
+        "tail",
+        "feet"
+    ],
+    "great pyrenees": [
+        "dog",
+        "face",
+        "ears",
+        "tail",
+        "paws"
+    ],
+    "havanese": [
+        "size",
+        "coat",
+        "tail",
+        "ears",
+        "eyes"
+    ],
+    "japanese chin": [
+        "body",
+        "legs",
+        "head",
+        "coat",
+        "fur",
+        "eyes",
+        "nose",
+        "ears"
+    ],
+    "keeshond": [
+        "coat",
+        "tail",
+        "head",
+        "ears",
+        "eyes",
+        "nose"
+    ],
+    "leonberger": [
+        "animal",
+        "color",
+        "nose",
+        "tail",
+        "eyes",
+        "body",
+        "feet"
+    ],
+    "miniature pinscher": [
+        "size",
+        "coat",
+        "ears",
+        "muzzle",
+        "tail",
+        "body",
+        "energy"
+    ],
+    "newfoundland": [
+        "body",
+        "coat",
+        "feet",
+        "head",
+        "ears",
+        "eyes"
+    ],
+    "pomeranian": [
+        "size",
+        "head",
+        "ears",
+        "coat"
+    ],
+    "pug": [
+        "breed",
+        "face",
+        "coat",
+        "eyes",
+        "tail",
+        "body",
+        "legs"
+    ],
+    "saint bernard": [
+        "animal",
+        "size",
+        "coat",
+        "markings",
+        "tail",
+        "build",
+        "head",
+        "ears",
+        "snout"
+    ],
+    "samoyed": [
+        "coat",
+        "coat",
+        "tail",
+        "eyes",
+        "ears",
+        "nose"
+    ],
+    "scottish terrier": [
+        "dog",
+        "coat",
+        "eyebrows",
+        "ears",
+        "tail",
+        "build"
+    ],
+    "shiba inu": [
+        "dog",
+        "fur",
+        "head",
+        "ears",
+        "eyes",
+        "nose",
+        "body",
+        "legs",
+        "tail"
+    ],
+    "staffordshire bull terrier": [
+        "body",
+        "legs",
+        "head",
+        "jaw",
+        "eyes",
+        "tail",
+        "coat",
+        "markings"
+    ],
+    "wheaten terrier": [
+        "dog",
+        "head",
+        "eyes",
+        "ears",
+        "neck",
+        "chest",
+        "back",
+        "tail",
+        "coat"
+    ],
+    "yorkshire terrier": [
+        "size",
+        "hair",
+        "ears",
+        "coat",
+        "eyes",
+        "muzzle"
+    ]
+}

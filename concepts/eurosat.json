@@ -1,0 +1,62 @@
+{
+    "Annual Crop Land": [
+        "fields",
+        "rows",
+        "colors",
+        "plants"
+    ],
+    "Forest": [
+        "area",
+        "trees",
+        "leaves",
+        "land"
+    ],
+    "Herbaceous Vegetation Land": [
+        "land",
+        "plants",
+        "grass",
+        "conditions"
+    ],
+    "Highway or Road": [
+        "line",
+        "surface",
+        "curve",
+        "pavement"
+    ],
+    "Industrial Buildings": [
+        "activity",
+        "buildings",
+        "evidence",
+        "structures"
+    ],
+    "Pasture Land": [
+        "vegetation",
+        "spaces",
+        "land",
+        "grass"
+    ],
+    "Permanent Crop Land": [
+        "fields",
+        "rows",
+        "systems",
+        "vegetation"
+    ],
+    "Residential Buildings": [
+        "structures",
+        "shape",
+        "groups",
+        "buildings"
+    ],
+    "River": [
+        "line",
+        "water",
+        "vegetation",
+        "winding"
+    ],
+    "Sea or Lake": [
+        "water",
+        "color",
+        "body",
+        "lake"
+    ]
+}

@@ -1,0 +1,284 @@
+{
+    "banded": [
+        "pattern",
+        "bands",
+        "widths",
+        "colors"
+    ],
+    "blotchy": [
+        "surface",
+        "colors",
+        "texture",
+        "finish"
+    ],
+    "braided": [
+        "strands",
+        "material",
+        "pattern",
+        "interlocking"
+    ],
+    "bubbly": [
+        "bumps",
+        "surface",
+        "appearance",
+        "quality"
+    ],
+    "bumpy": [
+        "surface",
+        "areas",
+        "feel",
+        "roughness"
+    ],
+    "chequered": [
+        "pattern",
+        "colors",
+        "lines",
+        "squares"
+    ],
+    "cobwebbed": [
+        "pattern",
+        "strands",
+        "places",
+        "touch"
+    ],
+    "cracked": [
+        "surface",
+        "cracks",
+        "sizes",
+        "debris"
+    ],
+    "crosshatched": [
+        "lines",
+        "grid",
+        "thicknesses",
+        "texture"
+    ],
+    "crystalline": [
+        "pattern",
+        "edges",
+        "surface",
+        "structure"
+    ],
+    "dotted": [
+        "dots",
+        "spacing",
+        "color",
+        "pattern"
+    ],
+    "fibrous": [
+        "view",
+        "strands",
+        "reflection",
+        "surface"
+    ],
+    "flecked": [
+        "pieces",
+        "colors",
+        "surface",
+        "roughness"
+    ],
+    "freckled": [
+        "spots",
+        "distribution",
+        "color",
+        "skin"
+    ],
+    "frilly": [
+        "patterns",
+        "materials",
+        "lightness",
+        "decoration"
+    ],
+    "gauzy": [
+        "fabric",
+        "feel",
+        "appearance",
+        "lace"
+    ],
+    "grid": [
+        "pattern",
+        "lines",
+        "spacing",
+        "color"
+    ],
+    "grooved": [
+        "lines",
+        "pattern",
+        "surface",
+        "texture"
+    ],
+    "honeycombed": [
+        "pattern",
+        "color",
+        "surface",
+        "shape"
+    ],
+    "interlaced": [
+        "lines",
+        "intersections",
+        "thicknesses",
+        "colors"
+    ],
+    "knitted": [
+        "loops",
+        "colors",
+        "appearance",
+        "dimension"
+    ],
+    "lacelike": [
+        "pattern",
+        "materials",
+        "colors",
+        "use"
+    ],
+    "lined": [
+        "lines",
+        "shapes",
+        "colors",
+        "thicknesses"
+    ],
+    "marbled": [
+        "pattern",
+        "colors",
+        "surface",
+        "texture"
+    ],
+    "matted": [
+        "pattern",
+        "relief",
+        "texture",
+        "shine"
+    ],
+    "meshed": [
+        "pattern",
+        "shapes",
+        "spacing",
+        "design"
+    ],
+    "paisley": [
+        "pattern",
+        "colors",
+        "design",
+        "shape"
+    ],
+    "perforated": [
+        "holes",
+        "surface",
+        "pattern",
+        "appearance"
+    ],
+    "pitted": [
+        "depressions",
+        "surface",
+        "finish",
+        "roughness"
+    ],
+    "pleated": [
+        "folds",
+        "fabric",
+        "surface",
+        "appearance"
+    ],
+    "polka-dotted": [
+        "dots",
+        "spacing",
+        "background",
+        "color"
+    ],
+    "porous": [
+        "holes",
+        "surface",
+        "areas",
+        "texture"
+    ],
+    "potholed": [
+        "holes",
+        "surface",
+        "shape",
+        "debris"
+    ],
+    "scaly": [
+        "plates",
+        "surface",
+        "finish",
+        "luster"
+    ],
+    "smeared": [
+        "appearance",
+        "colors",
+        "streaks",
+        "blurriness"
+    ],
+    "spiralled": [
+        "pattern",
+        "curves",
+        "surface",
+        "finish"
+    ],
+    "sprinkled": [
+        "dots",
+        "spacing",
+        "colors",
+        "shimmer"
+    ],
+    "stained": [
+        "area",
+        "surface",
+        "color",
+        "texture"
+    ],
+    "stratified": [
+        "layers",
+        "material",
+        "thicknesses",
+        "colors"
+    ],
+    "striped": [
+        "bands",
+        "pattern",
+        "directions",
+        "widths"
+    ],
+    "studded": [
+        "bumps",
+        "spacing",
+        "pattern",
+        "colors"
+    ],
+    "swirly": [
+        "pattern",
+        "surface",
+        "color",
+        "gloss"
+    ],
+    "veined": [
+        "pattern",
+        "lines",
+        "contrast",
+        "appearance"
+    ],
+    "waffled": [
+        "lines",
+        "appearance",
+        "texture",
+        "surface"
+    ],
+    "woven": [
+        "lines",
+        "pattern",
+        "fabric",
+        "weave"
+    ],
+    "wrinkled": [
+        "bumps",
+        "indentations",
+        "pattern",
+        "appearance"
+    ],
+    "zigzagged": [
+        "pattern",
+        "angles",
+        "lines",
+        "energy"
+    ]
+}
