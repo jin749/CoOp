@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # custom config
-DATA=/path/to/datasets
+DATA=/hdd/hdd3/jsh/DATA
 TRAINER=CoOp
 
 DATASET=$1

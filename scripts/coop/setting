@@ -1,0 +1,34 @@
+tmux new -s coop1
+conda activate coop
+export CUDA_VISIBLE_DEVICES=0
+bash scripts/coop/main.sh dtd rn50 end 16 16 False
+
+tmux new -s coop2
+conda activate coop
+export CUDA_VISIBLE_DEVICES=0
+bash scripts/coop/main.sh dtd rn50 end 1 16 False
+
+tmux new -s coop3
+conda activate coop
+export CUDA_VISIBLE_DEVICES=0
+bash scripts/coop/main.sh eurosat rn50 end 16 16 False
+
+tmux new -s coop4
+conda activate coop
+export CUDA_VISIBLE_DEVICES=0
+bash scripts/coop/main.sh eurosat rn50 end 1 16 False
+
+tmux new -s coop5
+conda activate coop
+export CUDA_VISIBLE_DEVICES=1
+bash scripts/coop/main.sh oxford_pets rn50 end 16 16 False
+
+tmux new -s coop6
+conda activate coop
+export CUDA_VISIBLE_DEVICES=1
+bash scripts/coop/main.sh oxford_pets rn50 end 1 16 False
+
+
+
+
+dtd eurosat oxford_pets oxford_flowers caltech101 fgvc_aircraft 
