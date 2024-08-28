@@ -73,8 +73,10 @@ class PromptLearner(nn.Module):
 
 
         ####
-        n_ctx = 16
-        c_ctx = 16  # 일단 4개 concept 추가해서 실험해보자
+        n_ctx = 8
+        print("n_ctx: ", n_ctx)
+        c_ctx = 8  # 일단 4개 concept 추가해서 실험해보자
+        print("c_ctx: ", c_ctx)
         with open(f"concepts/{cfg.OUTPUT_DIR.split('/')[1]}.json", "r") as json_file:
             concept_dict = json.load(json_file)
         ###
@@ -103,7 +105,7 @@ class PromptLearner(nn.Module):
         #prompts = [f'{prompt_prefix} {name} which has X X X X {concept_dict[name][0]}, XX ' for name in classnames]
         front_prompts = [f'{prompt_prefix} {name}' for name in classnames]
         middle_prompt = "which has"
-        end_prompts =  [f'@ @ @ @ {concept_dict[name][0]}, @ @ @ @ {concept_dict[name][1]}, @ @ @ @ {concept_dict[name][2]}, and @ @ @ @ {concept_dict[name][3]}.' for name in classnames]
+        end_prompts =  [f'@ @ {concept_dict[name][0]}, @ @ {concept_dict[name][1]}, @ @ {concept_dict[name][2]}, and @ @ {concept_dict[name][3]}.' for name in classnames]
         prompts = [f'{front_prompts[i]} {middle_prompt} {end_prompts[i]}' for i in range(len(classnames))]
         prompt_lens = [len(_tokenizer.encode(prompt)) for prompt in prompts]
 
@@ -112,14 +114,14 @@ class PromptLearner(nn.Module):
         assert len(concept_token) == 1
 
         for i in range(len(prompts)):
-            tokenized_prompt = _tokenizer.encode(prompts[i])
+            tokenized_prompt = clip.tokenize(prompts[i])[0]
             print(tokenized_prompt)
             index = 0
             locations = []
             while index < len(tokenized_prompt):
                 if tokenized_prompt[index] == concept_token[0]:
                     locations.append(index)
-                    index += 4
+                    index += 2
                 else:
                     index += 1
             adj_locations.append(locations)
@@ -185,13 +187,13 @@ class PromptLearner(nn.Module):
                 sos = e[:1, :] # (1, 512)
                 l0 = ctx[i][:n_ctx, :] # (16, 512)
                 t0 = e[1+n_ctx: adj_locations[i][0]]
-                l1 = ctx[i][n_ctx: n_ctx+4, :] # (4, 512)
+                l1 = ctx[i][n_ctx: n_ctx+2, :] # (2, 512)
                 t1 = e[adj_locations[i][0]+4: adj_locations[i][1]]
-                l2 = ctx[i][n_ctx+4: n_ctx+8, :] # (4, 512) 
+                l2 = ctx[i][n_ctx+2: n_ctx+4, :] # (2, 512) 
                 t2 = e[adj_locations[i][1]+4: adj_locations[i][2]]
-                l3 = ctx[i][n_ctx+8: n_ctx+12, :] # (4, 512)
+                l3 = ctx[i][n_ctx+4: n_ctx+6, :] # (2, 512)
                 t3 = e[adj_locations[i][2]+4: adj_locations[i][3]]
-                l4 = ctx[i][n_ctx+12: n_ctx+16, :] # (4, 512)
+                l4 = ctx[i][n_ctx+6: n_ctx+8, :] # (2, 512)
                 t4 = e[adj_locations[i][3]+4:]
                 
                 for j in adj_locations[i]:

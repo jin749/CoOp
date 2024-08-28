@@ -14,10 +14,10 @@
                 "--dataset-config-file", "configs/datasets/eurosat.yaml",
                 "--config-file", "configs/trainers/CoOp/vit_b32.yaml",
                 "--output-dir", "output/eurosat/CoOp/vit_b32_16shots/nctx16_cscTrue_ctpend/seed1",
-                "TRAINER.COOP.N_CTX", "16",
+                "TRAINER.COOP.N_CTX", "8",
                 "TRAINER.COOP.CSC", "True",
                 "TRAINER.COOP.CLASS_TOKEN_POSITION", "end",
-                "DATASET.NUM_SHOTS", "16"
+                "DATASET.NUM_SHOTS", "1"
             ],
             "pythonPath": "/home/jsh/.conda/envs/coop/bin/python",
             "env": {
