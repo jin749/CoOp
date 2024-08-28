@@ -74,7 +74,9 @@ class PromptLearner(nn.Module):
 
         ####
         n_ctx = 16
+        print("n_ctx: ", n_ctx)
         c_ctx = 16  # 일단 4개 concept 추가해서 실험해보자
+        print("c_ctx: ", c_ctx)
         with open(f"concepts/{cfg.OUTPUT_DIR.split('/')[1]}.json", "r") as json_file:
             concept_dict = json.load(json_file)
         ###
@@ -105,14 +107,13 @@ class PromptLearner(nn.Module):
         middle_prompt = "which has"
         end_prompts =  [f'@ @ @ @ {concept_dict[name][0]}, @ @ @ @ {concept_dict[name][1]}, @ @ @ @ {concept_dict[name][2]}, and @ @ @ @ {concept_dict[name][3]}.' for name in classnames]
         prompts = [f'{front_prompts[i]} {middle_prompt} {end_prompts[i]}' for i in range(len(classnames))]
-        prompt_lens = [len(_tokenizer.encode(prompt)) for prompt in prompts]
 
         adj_locations = []
         concept_token = _tokenizer.encode("@")
         assert len(concept_token) == 1
 
         for i in range(len(prompts)):
-            tokenized_prompt = _tokenizer.encode(prompts[i])
+            tokenized_prompt = clip.tokenize(prompts[i])[0]
             print(tokenized_prompt)
             index = 0
             locations = []
