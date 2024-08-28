@@ -133,3 +133,4 @@ output/
 data/
 debug.sh
 __MACOSX/
+sbatch/slogs
