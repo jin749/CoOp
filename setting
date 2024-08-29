@@ -1,0 +1,26 @@
+tmux new -s cooptf1
+
+tmux new -s coopff1
+cd /hdd/hdd3/jsh/coop_concept44
+conda activate coop
+
+CUDA_VISIBLE_DEVICES=0 bash scripts/coop/main.sh dtd vit_b32_ep50 end 16 1 True
+CUDA_VISIBLE_DEVICES=0 bash scripts/coop/main.sh dtd vit_b32_ep100 end 16 2 True
+CUDA_VISIBLE_DEVICES=0 bash scripts/coop/main.sh dtd vit_b32_ep100 end 16 4 True
+CUDA_VISIBLE_DEVICES=0 bash scripts/coop/main.sh dtd vit_b32 end 16 8 True
+CUDA_VISIBLE_DEVICES=0 bash scripts/coop/main.sh dtd vit_b32 end 16 16 True
+
+
+CUDA_VISIBLE_DEVICES=0 bash scripts/coop/main.sh eurosat vit_b32_ep50 end 16 1 True
+CUDA_VISIBLE_DEVICES=0 bash scripts/coop/main.sh eurosat vit_b32_ep100 end 16 2 True
+CUDA_VISIBLE_DEVICES=0 bash scripts/coop/main.sh eurosat vit_b32_ep100 end 16 4 True
+CUDA_VISIBLE_DEVICES=0 bash scripts/coop/main.sh eurosat vit_b32 end 16 8 True
+CUDA_VISIBLE_DEVICES=0 bash scripts/coop/main.sh eurosat vit_b32 end 16 16 True
+
+
+
+CUDA_VISIBLE_DEVICES=1 bash scripts/coop/main.sh oxford_pets vit_b32_ep50 end 16 1 True
+CUDA_VISIBLE_DEVICES=1 bash scripts/coop/main.sh oxford_pets vit_b32_ep100 end 16 2 True
+CUDA_VISIBLE_DEVICES=1 bash scripts/coop/main.sh oxford_pets vit_b32_ep100 end 16 4 True
+CUDA_VISIBLE_DEVICES=1 bash scripts/coop/main.sh oxford_pets vit_b32 end 16 8 True
+CUDA_VISIBLE_DEVICES=1 bash scripts/coop/main.sh oxford_pets vit_b32 end 16 16 True
