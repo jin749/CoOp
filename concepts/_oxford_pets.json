@@ -4,7 +4,7 @@
         "legs",
         "ears",
         "tail",
-        "neck"
+        "fur"
     ],
     "bengal": [
         "body",
@@ -84,7 +84,8 @@
         "tail"
     ],
     "sphynx": [
-        "breed",
+        "cat",
+        "hairless",
         "ears",
         "legs",
         "body",
@@ -180,7 +181,6 @@
     "havanese": [
         "size",
         "coat",
-        "color",
         "tail",
         "ears",
         "eyes"
@@ -215,7 +215,6 @@
     "miniature pinscher": [
         "size",
         "coat",
-        "coloration",
         "ears",
         "muzzle",
         "tail",
@@ -234,8 +233,7 @@
         "size",
         "head",
         "ears",
-        "coat",
-        "fur"
+        "coat"
     ],
     "pug": [
         "breed",
@@ -250,7 +248,6 @@
         "animal",
         "size",
         "coat",
-        "fur",
         "markings",
         "tail",
         "build",
@@ -260,7 +257,7 @@
     ],
     "samoyed": [
         "coat",
-        "head",
+        "coat",
         "tail",
         "eyes",
         "ears",
@@ -269,7 +266,6 @@
     "scottish terrier": [
         "dog",
         "coat",
-        "color",
         "eyebrows",
         "ears",
         "tail",
@@ -294,7 +290,7 @@
         "eyes",
         "tail",
         "coat",
-        "marks"
+        "markings"
     ],
     "wheaten terrier": [
         "dog",

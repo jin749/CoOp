@@ -73,12 +73,19 @@ class PromptLearner(nn.Module):
 
 
         ####
-        n_ctx = 16
+        
+        n_adj_token = 2
+        n_concept = 4
+        n_adj_ctx = n_adj_token * n_concept  
+        cfg.TRAINER.COOP["N_ADJ_TOKEN"] = n_adj_token
+        cfg.TRAINER.COOP["N_CONCEPT"] = n_concept
+        cfg.TRAINER.COOP["N_ADJ_CTX"] = n_adj_ctx
         print("n_ctx: ", n_ctx)
-        c_ctx = 16  # 일단 4개 concept 추가해서 실험해보자
-        print("c_ctx: ", c_ctx)
+        print("n_adj_ctx: ", f"{n_adj_ctx}*{n_concept}={n_adj_ctx}")
         with open(f"concepts/{cfg.OUTPUT_DIR.split('/')[1]}.json", "r") as json_file:
             concept_dict = json.load(json_file)
+        adj_token = "@ "
+        adj_token_idx = _tokenizer.encode(adj_token)[0]
         ###
 
         if ctx_init:
@@ -88,7 +95,7 @@ class PromptLearner(nn.Module):
             # random initialization
             if cfg.TRAINER.COOP.CSC:
                 print("Initializing class-specific contexts")
-                ctx_vectors = torch.empty(n_cls, n_ctx+c_ctx, ctx_dim, dtype=dtype)
+                ctx_vectors = torch.empty(n_cls, n_ctx+n_adj_ctx, ctx_dim, dtype=dtype)
             else:
                 raise Exception()
             
@@ -101,26 +108,25 @@ class PromptLearner(nn.Module):
         self.ctx = nn.Parameter(ctx_vectors)  # to be optimized
 
         classnames = [name.replace("_", " ") for name in classnames]
-        #name_lens = [len(_tokenizer.encode(name)) for name in classnames]
-        #prompts = [f'{prompt_prefix} {name} which has X X X X {concept_dict[name][0]}, XX ' for name in classnames]
         front_prompts = [f'{prompt_prefix} {name}' for name in classnames]
         middle_prompt = "which has"
-        end_prompts =  [f'@ @ @ @ {concept_dict[name][0]}, @ @ @ @ {concept_dict[name][1]}, @ @ @ @ {concept_dict[name][2]}, and @ @ @ @ {concept_dict[name][3]}.' for name in classnames]
+
+        assert n_concept == 4, "end_prompts were designed for 4 concepts"
+        end_prompts =  [f'{adj_token*n_adj_token}{concept_dict[name][0]}, {adj_token*n_adj_token}{concept_dict[name][1]}, {adj_token*n_adj_token}{concept_dict[name][2]}, and {adj_token*n_adj_token}{concept_dict[name][3]}.' for name in classnames]
+
         prompts = [f'{front_prompts[i]} {middle_prompt} {end_prompts[i]}' for i in range(len(classnames))]
 
-        adj_locations = []
-        concept_token = _tokenizer.encode("@")
-        assert len(concept_token) == 1
 
+        adj_locations = []
         for i in range(len(prompts)):
             tokenized_prompt = clip.tokenize(prompts[i])[0]
             print(tokenized_prompt)
             index = 0
             locations = []
             while index < len(tokenized_prompt):
-                if tokenized_prompt[index] == concept_token[0]:
+                if tokenized_prompt[index] == adj_token_idx:
                     locations.append(index)
-                    index += 4
+                    index += n_adj_token
                 else:
                     index += 1
             adj_locations.append(locations)
@@ -136,16 +142,16 @@ class PromptLearner(nn.Module):
         # These token vectors will be saved when in save_model(),
         # but they should be ignored in load_model() as we want to use
         # those computed using the current class names
-        self.register_buffer("token_prefix", embedding[:, :1, :])  # SOS
+        #self.register_buffer("token_prefix", embedding[:, :1, :])  # SOS
         #self.register_buffer("token_suffix", embedding[:, 1 + n_ctx :, :])  # CLS, EOS
 
         self.dtype = dtype
         self.n_cls = n_cls
         self.n_ctx = n_ctx
+        self.n_adj_token = n_adj_token
         self.tokenized_prompts = tokenized_prompts  # torch.Tensor
         #self.name_lens = name_lens
         self.class_token_position = cfg.TRAINER.COOP.CLASS_TOKEN_POSITION
-    
         """
         from clip import clip
         backbone_name = "ViT-B/32"
@@ -157,7 +163,6 @@ class PromptLearner(nn.Module):
 
         """
 
-
     def forward(self):
         ctx = self.ctx
         # if ctx.dim() == 2:
@@ -165,6 +170,7 @@ class PromptLearner(nn.Module):
         assert ctx.dim() == 3
 
         n_ctx = self.n_ctx
+        n_adj_token = self.n_adj_token
         #prefix = self.token_prefix
         embedding = self.embedding.to(ctx.device)
         adj_locations = self.adj_locations
@@ -172,77 +178,32 @@ class PromptLearner(nn.Module):
 
 
         if self.class_token_position == "end":
-            # prompts = torch.cat(
-            #     [
-            #         prefix,  # (n_cls, 1, dim)
-
-            #         ctx,     # (n_cls, n_ctx, dim)
-            #         suffix,  # (n_cls, *, dim)
-            #     ],
-            #     dim=1,
-            # )
             prompts = torch.Tensor().to(ctx.device).type(self.dtype)
             for i, e in enumerate(embedding):
-                sos = e[:1, :] # (1, 512)
-                l0 = ctx[i][:n_ctx, :] # (16, 512)
-                t0 = e[1+n_ctx: adj_locations[i][0]]
-                l1 = ctx[i][n_ctx: n_ctx+4, :] # (4, 512)
-                t1 = e[adj_locations[i][0]+4: adj_locations[i][1]]
-                l2 = ctx[i][n_ctx+4: n_ctx+8, :] # (4, 512) 
-                t2 = e[adj_locations[i][1]+4: adj_locations[i][2]]
-                l3 = ctx[i][n_ctx+8: n_ctx+12, :] # (4, 512)
-                t3 = e[adj_locations[i][2]+4: adj_locations[i][3]]
-                l4 = ctx[i][n_ctx+12: n_ctx+16, :] # (4, 512)
-                t4 = e[adj_locations[i][3]+4:]
-                
-                for j in adj_locations[i]:
-                    prompt = torch.cat((sos, l0, t0, l1, t1, l2, t2, l3, t3, l4, t4), dim=0) # (77, 512)
+                if n_adj_token == 0:
+                    sos = e[:1, :] # (1, 512)
+                    l0 = ctx[i][:n_ctx, :] # (16, 512)
+                    t0 = e[1+n_ctx:] # (60, 512)
+                    prompt = torch.cat((sos, l0, t0), dim=0)
                     prompt = prompt.unsqueeze(0) # (1, 77, 512)
+                else:
+                    sos = e[:1, :] # (1, 512)
+                    l0 = ctx[i][:n_ctx, :] # (16, 512)
+                    t0 = e[1+n_ctx: adj_locations[i][0]]
+                    l1 = ctx[i][n_ctx: n_ctx+n_adj_token, :] # (4, 512)
+                    t1 = e[adj_locations[i][0]+n_adj_token: adj_locations[i][1]]
+                    l2 = ctx[i][n_ctx+n_adj_token*1: n_ctx+n_adj_token*2, :] # (4, 512) 
+                    t2 = e[adj_locations[i][1]+n_adj_token: adj_locations[i][2]]
+                    l3 = ctx[i][n_ctx+n_adj_token*2: n_ctx+n_adj_token*3, :] # (4, 512)
+                    t3 = e[adj_locations[i][2]+n_adj_token: adj_locations[i][3]]
+                    l4 = ctx[i][n_ctx+n_adj_token*3: n_ctx+n_adj_token*4, :] # (4, 512)
+                    t4 = e[adj_locations[i][3]+n_adj_token:]
+                    
+                    for j in adj_locations[i]:
+                        prompt = torch.cat((sos, l0, t0, l1, t1, l2, t2, l3, t3, l4, t4), dim=0) # (77, 512)
+                        prompt = prompt.unsqueeze(0) # (1, 77, 512)
 
                 prompts = torch.cat((prompts, prompt), dim=0)
-
-        # elif self.class_token_position == "middle":
-        #     half_n_ctx = self.n_ctx // 2
-        #     prompts = []
-        #     for i in range(self.n_cls):
-        #         name_len = self.name_lens[i]
-        #         prefix_i = prefix[i : i + 1, :, :]
-        #         class_i = suffix[i : i + 1, :name_len, :]
-        #         suffix_i = suffix[i : i + 1, name_len:, :]
-        #         ctx_i_half1 = ctx[i : i + 1, :half_n_ctx, :]
-        #         ctx_i_half2 = ctx[i : i + 1, half_n_ctx:, :]
-        #         prompt = torch.cat(
-        #             [
-        #                 prefix_i,     # (1, 1, dim)
-        #                 ctx_i_half1,  # (1, n_ctx//2, dim)
-        #                 class_i,      # (1, name_len, dim)
-        #                 ctx_i_half2,  # (1, n_ctx//2, dim)
-        #                 suffix_i,     # (1, *, dim)
-        #             ],
-        #             dim=1,
-        #         )
-        #         prompts.append(prompt)
-        #     prompts = torch.cat(prompts, dim=0)
-
-        # elif self.class_token_position == "front":
-        #     prompts = []
-        #     for i in range(self.n_cls):
-        #         name_len = self.name_lens[i]
-        #         prefix_i = prefix[i : i + 1, :, :]
-        #         class_i = suffix[i : i + 1, :name_len, :]
-        #         suffix_i = suffix[i : i + 1, name_len:, :]
-        #         ctx_i = ctx[i : i + 1, :, :]
-        #         prompt = torch.cat(
-        #             [
-        #                 prefix_i,  # (1, 1, dim)
-        #                 class_i,   # (1, name_len, dim)
-        #                 ctx_i,     # (1, n_ctx, dim)
-        #                 suffix_i,  # (1, *, dim)
-        #             ],
-        #             dim=1,
-        #         )
-        #         prompts.append(prompt)
-        #     prompts = torch.cat(prompts, dim=0)
 
         else:
             raise ValueError

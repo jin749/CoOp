@@ -149,6 +149,27 @@ def main(args):
     if not args.no_train:
         trainer.train()
 
+    wandb_logging = True
+    if wandb_logging is True:
+        import wandb
+        config = trainer.cfg.TRAINER.COOP
+        del config['CTX_INIT']
+        del config['PREC']
+        config["DATASET"] = trainer.cfg.DATASET.NAME
+        config["BACKBONE"] = trainer.cfg.MODEL.BACKBONE.NAME
+        config["NUM_SHOTS"] = trainer.cfg.DATASET.NUM_SHOTS
+        config["MAX_EPOCH"] = trainer.cfg.OPTIM.MAX_EPOCH
+        config["NOTE"] = None
+        wandb.init(
+            project = "coop_concept",
+            entity = "jin749",
+            group = str(list(config.values())),
+            name = str(list(config.values())) + '_' + str(trainer.cfg.SEED),
+            config=config
+        )
+        acc = trainer.test()
+        wandb.log({"acc": acc})
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

@@ -1,0 +1,833 @@
+{
+    "pink primrose": [
+        "flower",
+        "stem",
+        "center",
+        "leaves",
+        "petals",
+        "hairy stem"
+    ],
+    "hard-leaved pocket orchid": [
+        "plant",
+        "leaves",
+        "flowers",
+        "stem",
+        "pods",
+        "green leaves",
+        "flowers"
+    ],
+    "canterbury bells": [
+        "flowers",
+        "stems",
+        "leaves",
+        "stem",
+        "petals",
+        "bell",
+        "flower"
+    ],
+    "sweet pea": [
+        "plant",
+        "stems",
+        "leaves",
+        "flowers",
+        "pods",
+        "climbing plant"
+    ],
+    "english marigold": [
+        "flowers",
+        "petals",
+        "disc",
+        "stem",
+        "leaves",
+        "scent"
+    ],
+    "tiger lily": [
+        "petals",
+        "stem",
+        "leaves",
+        "pistil",
+        "stamens",
+        "base"
+    ],
+    "moon orchid": [
+        "petals",
+        "stem",
+        "bloom",
+        "center",
+        "spur",
+        "scent"
+    ],
+    "bird of paradise": [
+        "feathers",
+        "tail feathers",
+        "beak",
+        "legs",
+        "neck",
+        "crest",
+        "displays"
+    ],
+    "monkshood": [
+        "plant",
+        "leaves",
+        "stem",
+        "flowers",
+        "pods",
+        "roots",
+        "sap"
+    ],
+    "globe thistle": [
+        "flower heads",
+        "petals",
+        "stems",
+        "leaves",
+        "stem",
+        "root system"
+    ],
+    "snapdragon": [
+        "colors",
+        "petals",
+        "lip",
+        "stem",
+        "seed pod",
+        "shape"
+    ],
+    "colt's foot": [
+        "herb",
+        "leaves",
+        "flowers",
+        "stem",
+        "taproot",
+        "stem",
+        "odor"
+    ],
+    "king protea": [
+        "petals",
+        "center",
+        "petals",
+        "stem",
+        "leaves",
+        "edges"
+    ],
+    "spear thistle": [
+        "leaves",
+        "stems",
+        "flowers",
+        "head",
+        "root system",
+        "stem base"
+    ],
+    "yellow iris": [
+        "petals",
+        "center",
+        "stamens",
+        "anthers",
+        "pistil",
+        "sepals",
+        "pollen"
+    ],
+    "globe-flower": [
+        "flower head",
+        "petals",
+        "stem",
+        "leaves",
+        "seeds",
+        "stem",
+        "flowers"
+    ],
+    "purple coneflower": [
+        "petals",
+        "center",
+        "stem",
+        "leaves",
+        "seed head",
+        "stem",
+        "flower head"
+    ],
+    "peruvian lily": [
+        "stem",
+        "flower",
+        "petals",
+        "stamens",
+        "leaves",
+        "base"
+    ],
+    "balloon flower": [
+        "plant",
+        "flower",
+        "stem",
+        "seed pod",
+        "colors",
+        "seed head"
+    ],
+    "giant white arum lily": [
+        "flower",
+        "leaves",
+        "stem",
+        "center",
+        "smell"
+    ],
+    "fire lily": [
+        "petals",
+        "stem",
+        "leaves",
+        "pistil",
+        "stamens",
+        "scent"
+    ],
+    "pincushion flower": [
+        "flower head",
+        "colors",
+        "stamens",
+        "hairs",
+        "center",
+        "petals"
+    ],
+    "fritillary": [
+        "butterfly",
+        "wings",
+        "antennae",
+        "body",
+        "wings",
+        "proboscis"
+    ],
+    "red ginger": [
+        "flower",
+        "stem",
+        "leaves",
+        "buds",
+        "sepals",
+        "bracts",
+        "stamens"
+    ],
+    "grape hyacinth": [
+        "flowers",
+        "clusters",
+        "petals",
+        "stems",
+        "stem",
+        "root system"
+    ],
+    "corn poppy": [
+        "flower",
+        "petals",
+        "center",
+        "stem",
+        "leaf",
+        "seed head"
+    ],
+    "prince of wales feathers": [
+        "feathers",
+        "feather",
+        "feathers",
+        "pattern",
+        "end"
+    ],
+    "stemless gentian": [
+        "herb",
+        "flowers",
+        "petals",
+        "sepals",
+        "stem",
+        "basal rosette"
+    ],
+    "artichoke": [
+        "shape",
+        "stem",
+        "heart",
+        "leaves",
+        "tips",
+        "leaves"
+    ],
+    "sweet william": [
+        "plant",
+        "flowers",
+        "stems",
+        "leaves",
+        "pods",
+        "scent"
+    ],
+    "carnation": [
+        "flower",
+        "petals",
+        "colors",
+        "pistil",
+        "stamens",
+        "scent"
+    ],
+    "garden phlox": [
+        "plant",
+        "stems",
+        "flowers",
+        "flowers",
+        "blooms",
+        "leaves"
+    ],
+    "love in the mist": [
+        "flower",
+        "petals",
+        "stamens",
+        "sepals",
+        "atmosphere"
+    ],
+    "mexican aster": [
+        "plant",
+        "flowers",
+        "stems",
+        "leaves",
+        "clumps",
+        "blooms"
+    ],
+    "alpine sea holly": [
+        "plant",
+        "leaves",
+        "flowers",
+        "stems",
+        "seed heads",
+        "areas"
+    ],
+    "ruby-lipped cattleya": [
+        "flower",
+        "petals",
+        "lip",
+        "sepals",
+        "stem",
+        "base",
+        "stigma"
+    ],
+    "cape flower": [
+        "colors",
+        "petals",
+        "center",
+        "stem",
+        "seed pod",
+        "smell"
+    ],
+    "great masterwort": [
+        "herb",
+        "leaves",
+        "flowers",
+        "flowers",
+        "stems",
+        "smell"
+    ],
+    "siam tulip": [
+        "petals",
+        "petals",
+        "ovary"
+    ],
+    "lenten rose": [
+        "plant",
+        "foliage",
+        "flowers",
+        "petals",
+        "stamens",
+        "leaves"
+    ],
+    "barbeton daisy": [
+        "flower",
+        "petals",
+        "center",
+        "stem",
+        "edges",
+        "clusters",
+        "blooms"
+    ],
+    "daffodil": [
+        "flower",
+        "stem",
+        "leaves",
+        "petals",
+        "corona",
+        "base"
+    ],
+    "sword lily": [
+        "leaves",
+        "stems",
+        "flowers",
+        "anthers",
+        "seed pods",
+        "root system"
+    ],
+    "poinsettia": [
+        "bracts",
+        "leaves",
+        "flowers",
+        "pattern",
+        "stem"
+    ],
+    "bolero deep blue": [
+        "color",
+        "jacket",
+        "sleeves",
+        "neckline",
+        "pockets",
+        "fitted waistline"
+    ],
+    "wallflower": [
+        "flowers",
+        "stems",
+        "leaves",
+        "clusters",
+        "scent"
+    ],
+    "marigold": [
+        "petals",
+        "disc",
+        "stem",
+        "leaf",
+        "stem",
+        "flower"
+    ],
+    "buttercup": [
+        "petals",
+        "sepals",
+        "center",
+        "stem",
+        "rosette of leaves"
+    ],
+    "oxeye daisy": [
+        "flower",
+        "center",
+        "stem",
+        "leaves",
+        "seed head",
+        "stem"
+    ],
+    "common dandelion": [
+        "flower head",
+        "stem",
+        "leaves",
+        "seed head",
+        "taproot",
+        "leaves"
+    ],
+    "petunia": [
+        "plant",
+        "flowers",
+        "leaves",
+        "stems",
+        "habit",
+        "scent"
+    ],
+    "wild pansy": [
+        "flower",
+        "petals",
+        "stem",
+        "rosette of leaves",
+        "leaves",
+        "seed pod"
+    ],
+    "primula": [
+        "plant",
+        "flowers",
+        "petals",
+        "center",
+        "leaves",
+        "stems",
+        "rosette"
+    ],
+    "sunflower": [
+        "petals",
+        "center",
+        "stem",
+        "leaves",
+        "stem",
+        "seed head"
+    ],
+    "pelargonium": [
+        "plant",
+        "leaves",
+        "flowers",
+        "stems",
+        "scent",
+        "stem"
+    ],
+    "bishop of llandaff": [
+        "cassock",
+        "mitre",
+        "cross",
+        "ring",
+        "stole",
+        "gloves",
+        "crozier"
+    ],
+    "gaura": [
+        "plant",
+        "stems",
+        "flowers",
+        "leaves",
+        "seed pods",
+        "sun",
+        "soil"
+    ],
+    "geranium": [
+        "flowers",
+        "stems",
+        "leaves",
+        "stem",
+        "scent",
+        "center",
+        "flower shape"
+    ],
+    "orange dahlia": [
+        "petals",
+        "center",
+        "flower head",
+        "stem",
+        "base",
+        "tip"
+    ],
+    "pink-yellow dahlia": [
+        "petals",
+        "center",
+        "stem",
+        "head",
+        "base",
+        "smell"
+    ],
+    "cautleya spicata": [
+        "herb",
+        "flowers",
+        "leaves",
+        "roots",
+        "stems",
+        "flowers",
+        "summer"
+    ],
+    "japanese anemone": [
+        "plant",
+        "flowers",
+        "stems",
+        "leaves",
+        "taproot",
+        "rhizome"
+    ],
+    "black-eyed susan": [
+        "flower",
+        "petals",
+        "center",
+        "stem",
+        "leaves",
+        "seed head"
+    ],
+    "silverbush": [
+        "shrub",
+        "foliage",
+        "flowers",
+        "berries",
+        "branches",
+        "bark",
+        "clusters"
+    ],
+    "californian poppy": [
+        "flower",
+        "petals",
+        "center",
+        "stem",
+        "leaf",
+        "seed pod"
+    ],
+    "osteospermum": [
+        "flower",
+        "petals",
+        "stems",
+        "leaves",
+        "seed pod",
+        "seed head"
+    ],
+    "spring crocus": [
+        "flower",
+        "petals",
+        "stem",
+        "leaves",
+        "seed pod"
+    ],
+    "bearded iris": [
+        "stem",
+        "leaves",
+        "flowers",
+        "petals",
+        "sepals",
+        "fragrance"
+    ],
+    "windflower": [
+        "plant",
+        "petals",
+        "center",
+        "stem",
+        "clusters",
+        "blooms"
+    ],
+    "tree poppy": [
+        "plant",
+        "flowers",
+        "leaves",
+        "stem",
+        "taproot",
+        "leaves"
+    ],
+    "gazania": [
+        "flower",
+        "petals",
+        "center",
+        "leaves",
+        "stems",
+        "mats"
+    ],
+    "azalea": [
+        "shrub",
+        "leaves",
+        "flowers",
+        "leaves",
+        "root system",
+        "soil"
+    ],
+    "water lily": [
+        "plant",
+        "leaves",
+        "flowers",
+        "stems",
+        "root system",
+        "stem",
+        "coating"
+    ],
+    "rose": [
+        "flower",
+        "stem",
+        "leaves",
+        "petals",
+        "smell",
+        "stamens"
+    ],
+    "thorn apple": [
+        "fruit",
+        "color",
+        "thorns",
+        "seed",
+        "flavor",
+        "smell"
+    ],
+    "morning glory": [
+        "vine",
+        "leaves",
+        "flowers",
+        "stem",
+        "pod",
+        "seed pod"
+    ],
+    "passion flower": [
+        "flower",
+        "petals",
+        "filaments",
+        "anthers",
+        "pistil",
+        "calyx",
+        "stem"
+    ],
+    "lotus": [
+        "plant",
+        "leaves",
+        "stems",
+        "flowers",
+        "petals",
+        "pod",
+        "root system"
+    ],
+    "toad lily": [
+        "plant",
+        "leaves",
+        "flowers",
+        "petals",
+        "center",
+        "stems",
+        "roots"
+    ],
+    "anthurium": [
+        "leaves",
+        "flowers",
+        "stems",
+        "spike",
+        "spathe",
+        "rhizomes"
+    ],
+    "frangipani": [
+        "plant",
+        "flowers",
+        "leaves",
+        "scent",
+        "sap"
+    ],
+    "clematis": [
+        "vine",
+        "stems",
+        "flowers",
+        "petals",
+        "sepals",
+        "stamens",
+        "head"
+    ],
+    "hibiscus": [
+        "flowers",
+        "petals",
+        "colors",
+        "stem",
+        "leaves",
+        "pod"
+    ],
+    "columbine": [
+        "flower",
+        "petals",
+        "spurs",
+        "leaves",
+        "stems"
+    ],
+    "desert-rose": [
+        "plant",
+        "leaves",
+        "stem",
+        "flowers",
+        "taproot",
+        "coating",
+        "sap"
+    ],
+    "tree mallow": [
+        "shrub",
+        "leaves",
+        "flowers",
+        "stems",
+        "leaves",
+        "texture",
+        "pods"
+    ],
+    "magnolia": [
+        "leaves",
+        "pods",
+        "trunk",
+        "canopy",
+        "smell"
+    ],
+    "cyclamen": [
+        "plant",
+        "leaves",
+        "flowers",
+        "flowers",
+        "stems",
+        "capsules"
+    ],
+    "watercress": [
+        "plant",
+        "leaves",
+        "stems",
+        "flowers",
+        "seeds",
+        "aroma"
+    ],
+    "canna lily": [
+        "flowers",
+        "leaves",
+        "stems",
+        "colors",
+        "rhizome",
+        "stalk",
+        "root system"
+    ],
+    "hippeastrum": [
+        "flowers",
+        "petals",
+        "colors",
+        "leaves",
+        "stem"
+    ],
+    "bee balm": [
+        "herb",
+        "flowers",
+        "leaves",
+        "stems",
+        "aroma",
+        "clusters",
+        "blooms"
+    ],
+    "ball moss": [
+        "leaves",
+        "roots",
+        "stems",
+        "flowers",
+        "leaves",
+        "coating",
+        "base"
+    ],
+    "foxglove": [
+        "plant",
+        "flowers",
+        "leaves",
+        "stems",
+        "capsule"
+    ],
+    "bougainvillea": [
+        "vine",
+        "flowers",
+        "leaves",
+        "stems",
+        "habit",
+        "structure"
+    ],
+    "camellia": [
+        "shrub",
+        "leaves",
+        "flowers",
+        "stamens",
+        "pods",
+        "bark"
+    ],
+    "mallow": [
+        "leaves",
+        "flowers",
+        "stems",
+        "root system",
+        "texture",
+        "flavor"
+    ],
+    "mexican petunia": [
+        "shrub",
+        "leaves",
+        "flowers",
+        "flowers",
+        "stems",
+        "habit"
+    ],
+    "bromelia": [
+        "plant",
+        "leaves",
+        "shape",
+        "colors",
+        "stem",
+        "flowers",
+        "fruits"
+    ],
+    "blanket flower": [
+        "flower",
+        "petals",
+        "center",
+        "stems",
+        "leaves",
+        "mounds"
+    ],
+    "trumpet creeper": [
+        "vine",
+        "flowers",
+        "leaves",
+        "tendrils",
+        "stem",
+        "pod",
+        "smell"
+    ],
+    "blackberry lily": [
+        "plant",
+        "leaves",
+        "flowers",
+        "petals",
+        "center",
+        "stems",
+        "pods"
+    ]
+}

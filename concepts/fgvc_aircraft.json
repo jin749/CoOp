@@ -1,0 +1,801 @@
+{
+    "707-320": [
+        "wings",
+        "engines",
+        "stabilizers",
+        "fuselage",
+        "nose",
+        "tail fin"
+    ],
+    "727-200": [
+        "body",
+        "design",
+        "profile",
+        "windows",
+        "exits",
+        "livery"
+    ],
+    "737-200": [
+        "fuselage",
+        "gear",
+        "tail",
+        "exits",
+        "engines",
+        "wings"
+    ],
+    "737-300": [
+        "fuselage",
+        "gear",
+        "tail",
+        "exits",
+        "engines",
+        "wings"
+    ],
+    "737-400": [
+        "fuselage",
+        "gear",
+        "tail",
+        "engines",
+        "wheels",
+        "landing gear"
+    ],
+    "737-500": [
+        "body",
+        "engines",
+        "wings",
+        "tail",
+        "stabilizer",
+        "seating"
+    ],
+    "737-600": [
+        "tail",
+        "engines",
+        "design",
+        "cockpit",
+        "capacity",
+        "cabin"
+    ],
+    "737-700": [
+        "tail",
+        "engines",
+        "wings",
+        "exit",
+        "design",
+        "shape"
+    ],
+    "737-800": [
+        "livery",
+        "wings",
+        "engines",
+        "tail",
+        "cabin",
+        "radome"
+    ],
+    "737-900": [
+        "wingtips",
+        "engines",
+        "tail",
+        "cabin",
+        "section",
+        "window"
+    ],
+    "747-100": [
+        "fuselage",
+        "decks",
+        "wings",
+        "engines",
+        "stabilizers",
+        "nose"
+    ],
+    "747-200": [
+        "fuselage",
+        "decks",
+        "wings",
+        "fins",
+        "engines",
+        "landing gear"
+    ],
+    "747-300": [
+        "engines",
+        "decks",
+        "nose",
+        "fin",
+        "wings",
+        "fuselage"
+    ],
+    "747-400": [
+        "hump",
+        "decks",
+        "wings",
+        "engines",
+        "stabilizers",
+        "shape"
+    ],
+    "757-200": [
+        "fuselage",
+        "wings",
+        "engines",
+        "tail",
+        "gear",
+        "landing gear"
+    ],
+    "757-300": [
+        "fuselage",
+        "wings",
+        "engines",
+        "stabilizers",
+        "tail",
+        "window"
+    ],
+    "767-200": [
+        "cabin",
+        "wings",
+        "engines",
+        "tail",
+        "gear",
+        "landing gear"
+    ],
+    "767-300": [
+        "fuselage",
+        "tips",
+        "engines",
+        "tail",
+        "stabilizer",
+        "radar"
+    ],
+    "767-400": [
+        "fuselage",
+        "engines",
+        "wings",
+        "stabilizers",
+        "nacelles",
+        "profile"
+    ],
+    "777-200": [
+        "engines",
+        "fuselage",
+        "fin",
+        "wing",
+        "nose",
+        "cockpit"
+    ],
+    "777-300": [
+        "fuselage",
+        "engines",
+        "stabilizers",
+        "shape",
+        "wing",
+        "configuration"
+    ],
+    "A300B4": [
+        "livery",
+        "wings",
+        "engines",
+        "tail",
+        "fuselage",
+        "window"
+    ],
+    "A310": [
+        "design",
+        "engines",
+        "stabilizers",
+        "nose",
+        "window",
+        "configuration"
+    ],
+    "A318": [
+        "aircraft",
+        "engines",
+        "nose",
+        "wings",
+        "fin",
+        "configuration"
+    ],
+    "A319": [
+        "airliner",
+        "fuselage",
+        "engines",
+        "nose",
+        "stabilizer",
+        "exits"
+    ],
+    "A320": [
+        "airliner",
+        "livery",
+        "engines",
+        "wings",
+        "cabin",
+        "exits"
+    ],
+    "A321": [
+        "airliner",
+        "fuselage",
+        "engines",
+        "stabilizers",
+        "gear",
+        "exits"
+    ],
+    "A330-200": [
+        "airliner",
+        "engines",
+        "wings",
+        "nose",
+        "fuselage",
+        "gear"
+    ],
+    "A330-300": [
+        "airliner",
+        "fuselage",
+        "engines",
+        "wings",
+        "stabilizers",
+        "profile"
+    ],
+    "A340-200": [
+        "airliner",
+        "fuselage",
+        "wings",
+        "stabilizers",
+        "engines",
+        "exits"
+    ],
+    "A340-300": [
+        "airliner",
+        "fuselage",
+        "wings",
+        "engines",
+        "stabilizers",
+        "livery"
+    ],
+    "A340-500": [
+        "airliner",
+        "fuselage",
+        "wings",
+        "stabilizers",
+        "engines",
+        "exits"
+    ],
+    "A340-600": [
+        "airliner",
+        "fuselage",
+        "wings",
+        "stabilizers",
+        "engines",
+        "tank"
+    ],
+    "A380": [
+        "engines",
+        "decks",
+        "wings",
+        "nose",
+        "fin",
+        "gear"
+    ],
+    "ATR-42": [
+        "aircraft",
+        "monoplane",
+        "propellers",
+        "engines",
+        "tail",
+        "fuselage"
+    ],
+    "ATR-72": [
+        "aircraft",
+        "monoplane",
+        "engines",
+        "tail",
+        "propellers",
+        "gear"
+    ],
+    "An-12": [
+        "fuselage",
+        "wings",
+        "engines",
+        "doors",
+        "stabilizers",
+        "nose"
+    ],
+    "BAE 146-200": [
+        "airliner",
+        "monoplane",
+        "wings",
+        "engines",
+        "gear",
+        "doors"
+    ],
+    "BAE 146-300": [
+        "airliner",
+        "monoplane",
+        "wings",
+        "tail",
+        "engines",
+        "gear"
+    ],
+    "BAE-125": [
+        "aircraft",
+        "prop",
+        "wings",
+        "stabilizers",
+        "engines",
+        "nose"
+    ],
+    "Beechcraft 1900": [
+        "aircraft",
+        "monoplane",
+        "propellers",
+        "gear",
+        "fuselage",
+        "nose"
+    ],
+    "Boeing 717": [
+        "fuselage",
+        "wings",
+        "engines",
+        "tail",
+        "cockpit",
+        "exits"
+    ],
+    "C-130": [
+        "fuselage",
+        "wings",
+        "gear",
+        "propellers",
+        "stabilizers",
+        "fins"
+    ],
+    "C-47": [
+        "aircraft",
+        "monoplane",
+        "engines",
+        "wings",
+        "tail",
+        "fuselage"
+    ],
+    "CRJ-200": [
+        "jet",
+        "wings",
+        "tail",
+        "nose",
+        "cabin",
+        "livery"
+    ],
+    "CRJ-700": [
+        "jet",
+        "wings",
+        "tail",
+        "nose",
+        "cabin",
+        "engine"
+    ],
+    "CRJ-900": [
+        "jet",
+        "wings",
+        "tail",
+        "nose",
+        "cabin",
+        "engine"
+    ],
+    "Cessna 172": [
+        "aircraft",
+        "gear",
+        "wings",
+        "stabilizer",
+        "engine",
+        "propeller"
+    ],
+    "Cessna 208": [
+        "aircraft",
+        "gear",
+        "wings",
+        "stabilizer",
+        "engine",
+        "door"
+    ],
+    "Cessna 525": [
+        "aircraft",
+        "monoplane",
+        "propeller",
+        "gear",
+        "doors",
+        "stabilizer"
+    ],
+    "Cessna 560": [
+        "aircraft",
+        "body",
+        "aileron",
+        "engines",
+        "tail",
+        "gear"
+    ],
+    "Challenger 600": [
+        "jet",
+        "fuselage",
+        "wings",
+        "engines",
+        "tail",
+        "windows"
+    ],
+    "DC-10": [
+        "airliner",
+        "body",
+        "wings",
+        "stabilizers",
+        "engines",
+        "tail"
+    ],
+    "DC-3": [
+        "aircraft",
+        "engine",
+        "fuselage",
+        "tail",
+        "landing gear",
+        "propellers"
+    ],
+    "DC-6": [
+        "airliner",
+        "wings",
+        "fuselage",
+        "tail",
+        "gear",
+        "cabin"
+    ],
+    "DC-8": [
+        "airliner",
+        "design",
+        "cockpit",
+        "windows",
+        "fins",
+        "fuselage"
+    ],
+    "DC-9-30": [
+        "jet",
+        "wings",
+        "engines",
+        "tail",
+        "cabin",
+        "gear"
+    ],
+    "DH-82": [
+        "fuselage",
+        "wings",
+        "gear",
+        "propeller",
+        "cockpit",
+        "scheme"
+    ],
+    "DHC-1": [
+        "monoplane",
+        "gear",
+        "canopy",
+        "wings",
+        "tail"
+    ],
+    "DHC-6": [
+        "monoplane",
+        "gear",
+        "tail",
+        "windows",
+        "fuselage",
+        "shape"
+    ],
+    "DHC-8-100": [
+        "aircraft",
+        "monoplane",
+        "engines",
+        "tail",
+        "propellers",
+        "gear"
+    ],
+    "DHC-8-300": [
+        "aircraft",
+        "monoplane",
+        "tail",
+        "engines",
+        "propellers",
+        "gear"
+    ],
+    "DR-400": [
+        "aircraft",
+        "gear",
+        "propeller",
+        "tail",
+        "canopy",
+        "seats"
+    ],
+    "Dornier 328": [
+        "aircraft",
+        "monoplane",
+        "propellers",
+        "engines",
+        "tail",
+        "window"
+    ],
+    "E-170": [
+        "aircraft",
+        "monoplane",
+        "propeller",
+        "seats",
+        "doors",
+        "gear"
+    ],
+    "E-190": [
+        "airliner",
+        "wingtips",
+        "engines",
+        "tail",
+        "cockpit",
+        "windshield"
+    ],
+    "E-195": [
+        "jet",
+        "livery",
+        "wings",
+        "engines",
+        "tail",
+        "window"
+    ],
+    "EMB-120": [
+        "airliner",
+        "gear",
+        "tail",
+        "configuration",
+        "wing",
+        "cone"
+    ],
+    "ERJ 135": [
+        "jet",
+        "wings",
+        "tail",
+        "cockpit",
+        "seating",
+        "livery"
+    ],
+    "ERJ 145": [
+        "jet",
+        "engines",
+        "wings",
+        "stabilizers",
+        "tail",
+        "cabin"
+    ],
+    "Embraer Legacy 600": [
+        "jet",
+        "wings",
+        "engines",
+        "tail",
+        "gear",
+        "windows"
+    ],
+    "Eurofighter Typhoon": [
+        "aircraft",
+        "wing",
+        "canards",
+        "stabilizers",
+        "intakes",
+        "nozzles"
+    ],
+    "F-16A/B": [
+        "aircraft",
+        "wings",
+        "stabilizers",
+        "canopy",
+        "exhaust",
+        "intakes"
+    ],
+    "F/A-18": [
+        "aircraft",
+        "jet",
+        "wings",
+        "stabilizers",
+        "intakes",
+        "nozzles"
+    ],
+    "Falcon 2000": [
+        "jet",
+        "fuselage",
+        "wings",
+        "engines",
+        "stabilizers",
+        "gear"
+    ],
+    "Falcon 900": [
+        "jet",
+        "fuselage",
+        "wings",
+        "stabilizers",
+        "engines",
+        "gear"
+    ],
+    "Fokker 100": [
+        "airliner",
+        "fuselage",
+        "wings",
+        "engines",
+        "tail",
+        "gear"
+    ],
+    "Fokker 50": [
+        "aircraft",
+        "body",
+        "engines",
+        "tail",
+        "fuselage",
+        "nose"
+    ],
+    "Fokker 70": [
+        "airliner",
+        "fuselage",
+        "wings",
+        "stabilizers",
+        "engines",
+        "gear"
+    ],
+    "Global Express": [
+        "design",
+        "engines",
+        "wings",
+        "windows",
+        "fins",
+        "cone"
+    ],
+    "Gulfstream IV": [
+        "fuselage",
+        "wings",
+        "engines",
+        "tail",
+        "window",
+        "scheme"
+    ],
+    "Gulfstream V": [
+        "wings",
+        "engines",
+        "tail",
+        "fuselage",
+        "nose",
+        "window"
+    ],
+    "Hawk T1": [
+        "shape",
+        "fuselage",
+        "intakes",
+        "exhausts",
+        "fins",
+        "pylons"
+    ],
+    "Il-76": [
+        "wings",
+        "stabilizers",
+        "door",
+        "tail",
+        "nose",
+        "windshield"
+    ],
+    "L-1011": [
+        "aircraft",
+        "engines",
+        "wings",
+        "tail",
+        "fuselage",
+        "fin"
+    ],
+    "MD-11": [
+        "airliner",
+        "fuselage",
+        "wings",
+        "stabilizers",
+        "engines",
+        "windows"
+    ],
+    "MD-80": [
+        "jet",
+        "wings",
+        "engines",
+        "tail",
+        "fuselage",
+        "door"
+    ],
+    "MD-87": [
+        "jet",
+        "wings",
+        "engines",
+        "tail",
+        "fuselage",
+        "window"
+    ],
+    "MD-90": [
+        "jet",
+        "wings",
+        "engines",
+        "tail",
+        "fuselage",
+        "window"
+    ],
+    "Metroliner": [
+        "shape",
+        "body",
+        "wings",
+        "engines",
+        "nose",
+        "tail"
+    ],
+    "Model B200": [
+        "shape",
+        "handle",
+        "wheels",
+        "cord",
+        "switch",
+        "panel"
+    ],
+    "PA-28": [
+        "aircraft",
+        "gear",
+        "wings",
+        "engine",
+        "tail",
+        "propeller"
+    ],
+    "SR-20": [
+        "aircraft",
+        "gear",
+        "construction",
+        "wings",
+        "propeller",
+        "seats"
+    ],
+    "Saab 2000": [
+        "sedan",
+        "hood",
+        "job",
+        "headlights",
+        "trim",
+        "spoiler"
+    ],
+    "Saab 340": [
+        "aircraft",
+        "body",
+        "propellers",
+        "tail",
+        "nose",
+        "window"
+    ],
+    "Spitfire": [
+        "aircraft",
+        "wings",
+        "gear",
+        "propeller",
+        "markings",
+        "intakes"
+    ],
+    "Tornado": [
+        "cloud",
+        "winds",
+        "debris",
+        "sky",
+        "sound",
+        "lines"
+    ],
+    "Tu-134": [
+        "jet",
+        "wings",
+        "stabilizers",
+        "engines",
+        "tail",
+        "windshield"
+    ],
+    "Tu-154": [
+        "jet",
+        "wings",
+        "tail",
+        "gear",
+        "stabilizers",
+        "fuselage"
+    ],
+    "Yak-42": [
+        "jet",
+        "wings",
+        "engines",
+        "tail",
+        "fuselage",
+        "fin"
+    ]
+}

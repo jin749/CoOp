@@ -1,0 +1,604 @@
+{
+    "Airplane": [
+        "body",
+        "engines",
+        "cockpit",
+        "control surfaces",
+        "gear"
+    ],
+    "Face": [
+        "nose",
+        "eyes",
+        "hair",
+        "mouth",
+        "expressions"
+    ],
+    "Motorbike": [
+        "frame",
+        "pipes",
+        "seat",
+        "lights"
+    ],
+    "Leopard": [
+        "body",
+        "fur",
+        "tail",
+        "claws"
+    ],
+    "accordion": [
+        "shape",
+        "bellows",
+        "keyboard",
+        "buttons"
+    ],
+    "anchor": [
+        "object",
+        "arms",
+        "ring",
+        "base"
+    ],
+    "ant": [
+        "insect",
+        "color",
+        "body",
+        "mandibles"
+    ],
+    "barrel": [
+        "construction",
+        "bands",
+        "spout",
+        "handle"
+    ],
+    "bass": [
+        "strings",
+        "neck",
+        "body",
+        "pegs"
+    ],
+    "beaver": [
+        "tail",
+        "feet",
+        "fur",
+        "ears"
+    ],
+    "binocular": [
+        "eyepieces",
+        "knob",
+        "cover",
+        "strap"
+    ],
+    "bonsai": [
+        "pot",
+        "branches",
+        "roots",
+        "moss"
+    ],
+    "brain": [
+        "organ",
+        "surface",
+        "hemispheres",
+        "lobes"
+    ],
+    "brontosaurus": [
+        "legs",
+        "skin",
+        "neck",
+        "teeth"
+    ],
+    "buddha": [
+        "expression",
+        "head",
+        "earlobes",
+        "position"
+    ],
+    "butterfly": [
+        "wings",
+        "antennae",
+        "legs",
+        "body"
+    ],
+    "camera": [
+        "device",
+        "lens",
+        "viewfinder",
+        "button"
+    ],
+    "cannon": [
+        "barrel",
+        "wheels",
+        "mechanism",
+        "muzzle"
+    ],
+    "car side": [
+        "wheels",
+        "hood",
+        "mirror",
+        "window"
+    ],
+    "ceiling fan": [
+        "fan",
+        "hub",
+        "fixture",
+        "switch"
+    ],
+    "cellphone": [
+        "device",
+        "shape",
+        "display",
+        "buttons"
+    ],
+    "chair": [
+        "legs",
+        "seat",
+        "backrest",
+        "armrests"
+    ],
+    "chandelier": [
+        "fixture",
+        "frame",
+        "arms",
+        "pieces"
+    ],
+    "cougar body": [
+        "body",
+        "tail",
+        "ears",
+        "fur"
+    ],
+    "cougar face": [
+        "head",
+        "ears",
+        "whiskers",
+        "eyes"
+    ],
+    "crab": [
+        "crustacean",
+        "claws",
+        "shell",
+        "eyes"
+    ],
+    "crayfish": [
+        "crustacean",
+        "claws",
+        "antennae",
+        "legs"
+    ],
+    "crocodile": [
+        "reptile",
+        "tail",
+        "teeth",
+        "feet"
+    ],
+    "crocodile head": [
+        "snout",
+        "jaws",
+        "teeth",
+        "eyes"
+    ],
+    "cup": [
+        "shape",
+        "handle",
+        "rim",
+        "lid"
+    ],
+    "dalmatian": [
+        "coat",
+        "fur",
+        "muzzle",
+        "tail"
+    ],
+    "dollar bill": [
+        "color",
+        "portrait",
+        "words",
+        "Seal"
+    ],
+    "dolphin": [
+        "body",
+        "fin",
+        "snout",
+        "flippers"
+    ],
+    "dragonfly": [
+        "wings",
+        "body",
+        "eyes",
+        "tail"
+    ],
+    "electric guitar": [
+        "strings",
+        "neck",
+        "body",
+        "pickguard"
+    ],
+    "elephant": [
+        "skin",
+        "trunk",
+        "ears",
+        "legs"
+    ],
+    "emu": [
+        "feathers",
+        "beak",
+        "head",
+        "tail"
+    ],
+    "euphonium": [
+        "instrument",
+        "bore",
+        "valves",
+        "mouthpiece"
+    ],
+    "ewer": [
+        "vessel",
+        "handle",
+        "spout",
+        "base"
+    ],
+    "ferry": [
+        "deck",
+        "ramps",
+        "engines",
+        "lifeboats"
+    ],
+    "flamingo": [
+        "neck",
+        "legs",
+        "feathers",
+        "beak"
+    ],
+    "flamingo head": [
+        "feathers",
+        "neck",
+        "beak",
+        "eyes"
+    ],
+    "garfield": [
+        "stripes",
+        "muzzle",
+        "eyes",
+        "ears"
+    ],
+    "gerenuk": [
+        "body",
+        "legs",
+        "coat",
+        "horns"
+    ],
+    "gramophone": [
+        "horn",
+        "turntable",
+        "arm",
+        "platter"
+    ],
+    "grand piano": [
+        "instrument",
+        "finish",
+        "keys",
+        "lid"
+    ],
+    "hawksbill": [
+        "beak",
+        "wings",
+        "feathers",
+        "eyes"
+    ],
+    "headphone": [
+        "device",
+        "earpieces",
+        "earpads",
+        "jack"
+    ],
+    "hedgehog": [
+        "mammal",
+        "spines",
+        "legs",
+        "snout"
+    ],
+    "helicopter": [
+        "aircraft",
+        "rotor",
+        "cockpit",
+        "skids"
+    ],
+    "ibis": [
+        "bill",
+        "feathers",
+        "neck",
+        "wings"
+    ],
+    "inline skate": [
+        "shoe",
+        "wheels",
+        "brake",
+        "frame"
+    ],
+    "joshua tree": [
+        "tree",
+        "trunk",
+        "branches",
+        "leaves"
+    ],
+    "kangaroo": [
+        "marsupial",
+        "tail",
+        "legs",
+        "ears"
+    ],
+    "ketch": [
+        "vessel",
+        "masts",
+        "boom",
+        "cockpit"
+    ],
+    "lamp": [
+        "source",
+        "shade",
+        "switch",
+        "cord"
+    ],
+    "laptop": [
+        "device",
+        "screen",
+        "keyboard",
+        "battery"
+    ],
+    "llama": [
+        "fur",
+        "ears",
+        "neck",
+        "tail"
+    ],
+    "lobster": [
+        "crustacean",
+        "claws",
+        "legs",
+        "shell"
+    ],
+    "lotus": [
+        "plant",
+        "leaves",
+        "stems",
+        "flowers"
+    ],
+    "mandolin": [
+        "instrument",
+        "strings",
+        "body",
+        "holes"
+    ],
+    "mayfly": [
+        "insect",
+        "wings",
+        "antennae",
+        "body"
+    ],
+    "menorah": [
+        "candelabra",
+        "branches",
+        "stem",
+        "holder"
+    ],
+    "metronome": [
+        "device",
+        "pendulum",
+        "dial",
+        "sound"
+    ],
+    "minaret": [
+        "structure",
+        "mosque",
+        "balcony",
+        "dome"
+    ],
+    "nautilus": [
+        "shell",
+        "tentacles",
+        "eyes",
+        "gills"
+    ],
+    "octopus": [
+        "body",
+        "arms",
+        "suction cups",
+        "beak"
+    ],
+    "okapi": [
+        "fur",
+        "stripes",
+        "head",
+        "tongue"
+    ],
+    "pagoda": [
+        "structure",
+        "roof",
+        "spire",
+        "carvings"
+    ],
+    "panda": [
+        "head",
+        "ears",
+        "tail",
+        "patches"
+    ],
+    "pigeon": [
+        "bird",
+        "feathers",
+        "beak",
+        "legs"
+    ],
+    "pizza": [
+        "shape",
+        "crust",
+        "sauce",
+        "cheese"
+    ],
+    "platypus": [
+        "mammal",
+        "fur",
+        "feet",
+        "bill"
+    ],
+    "pyramid": [
+        "shape",
+        "top",
+        "base",
+        "blocks"
+    ],
+    "revolver": [
+        "handgun",
+        "shape",
+        "trigger",
+        "barrel"
+    ],
+    "rhino": [
+        "horns",
+        "skin",
+        "head",
+        "legs"
+    ],
+    "rooster": [
+        "bird",
+        "comb",
+        "feathers",
+        "beak"
+    ],
+    "saxophone": [
+        "body",
+        "neck",
+        "bell",
+        "keys"
+    ],
+    "schooner": [
+        "vessel",
+        "masts",
+        "hull",
+        "sail"
+    ],
+    "scissors": [
+        "tool",
+        "edges",
+        "tip",
+        "loop"
+    ],
+    "scorpion": [
+        "arachnid",
+        "claws",
+        "tail",
+        "exoskeleton"
+    ],
+    "sea horse": [
+        "creature",
+        "snout",
+        "body",
+        "tail"
+    ],
+    "snoopy": [
+        "character",
+        "fur",
+        "ears",
+        "nose"
+    ],
+    "soccer ball": [
+        "shape",
+        "pattern",
+        "material",
+        "panels"
+    ],
+    "stapler": [
+        "device",
+        "shape",
+        "handle",
+        "mechanism"
+    ],
+    "starfish": [
+        "creature",
+        "body",
+        "feet",
+        "disc"
+    ],
+    "stegosaurus": [
+        "plates",
+        "spikes",
+        "head",
+        "legs"
+    ],
+    "stop sign": [
+        "background",
+        "lettering",
+        "border",
+        "arrow"
+    ],
+    "strawberry": [
+        "fruit",
+        "leaves",
+        "seeds",
+        "tip"
+    ],
+    "sunflower": [
+        "petals",
+        "center",
+        "stem",
+        "leaves"
+    ],
+    "tick": [
+        "body",
+        "legs",
+        "shell",
+        "mouthparts"
+    ],
+    "trilobite": [
+        "arthropod",
+        "body",
+        "eyes",
+        "legs"
+    ],
+    "umbrella": [
+        "canopy",
+        "ribs",
+        "handle",
+        "shaft"
+    ],
+    "watch": [
+        "face",
+        "band",
+        "display",
+        "buttons"
+    ],
+    "water lilly": [
+        "plant",
+        "leaves",
+        "flowers",
+        "stem"
+    ],
+    "wheelchair": [
+        "wheels",
+        "seat",
+        "backrest",
+        "frame"
+    ],
+    "wild cat": [
+        "mammal",
+        "ears",
+        "fur",
+        "claws"
+    ],
+    "windsor chair": [
+        "chair",
+        "backrest",
+        "legs",
+        "crest"
+    ],
+    "wrench": [
+        "tool",
+        "handle",
+        "head",
+        "jaw"
+    ],
+    "yin yang": [
+        "shapes",
+        "dots",
+        "circle",
+        "line"
+    ]
+}

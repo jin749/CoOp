@@ -32,7 +32,8 @@ def load_clip_to_cpu(backbone_name="ViT-B/32"):
 # fpath = args.fpath
 # topk = args.topk
 
-fpath = "/hdd/hdd3/jsh/APL_ml4/APL/output/oxford_pets/MeanCoOp_vit_b32_ep100_CSCFalse_autofilterFalse_0.0/imgkms_badge2_pthres0.4_rthres0.0/n1_r4_breakFalse/seed3/5round/prompt_learner/model.pth.tar-100"
+fpath = "/hdd/hdd3/jsh/coop_main/output(valila..)/oxford_pets/CoOp/vit_b32_16shots/nctx16_cscTrue_ctpend/seed1/prompt_learner/model.pth.tar-200"
+#fpath = "/hdd/hdd3/jsh/coop_concept44/output/output44/oxford_pets/CoOp/vit_b32_16shots/nctx16_cscTrue_ctpend/seed1/prompt_learner/model.pth.tar-200"
 topk = 5
 
 assert os.path.exists(fpath)
@@ -92,28 +93,41 @@ if ctx.dim() == 2:
 elif ctx.dim() == 3:
     for i, c in enumerate(ctx):
         print(f"Class {i}")
-        # Class-specific context
+
+        # Generic context
         distance = torch.cdist(c, token_embedding)
         print(f"Size of distance matrix: {distance.shape}")
         sorted_idxs = torch.argsort(distance, dim=1)
+        sorted_idxs = sorted_idxs[:, :topk]
 
-        closest_idxs = []
-        for i, idxs in enumerate(sorted_idxs):
-            t2 = []
-            k = 0
-            for idx in idxs:
-                token = tokenizer.decoder[idx.item()]
-                if (set(token) - set(basic_char_for_writing)) == set():
-                    t2.append(idx)
-                    k += 1
-                if k == topk:
-                    break
-            closest_idxs.append(t2)
-
-        #sorted_idxs = sorted_idxs[:, :topk]
-
-        for m, idxs in enumerate(closest_idxs):
+        for m, idxs in enumerate(sorted_idxs):
             words = [tokenizer.decoder[idx.item()] for idx in idxs]
             dist = [f"{distance[m, idx].item():.4f}" for idx in idxs]
             print(f"{m+1}: {words} {dist}")
 
+        # # Class-specific context
+        # distance = torch.cdist(c, token_embedding)
+        # print(f"Size of distance matrix: {distance.shape}")
+        # sorted_idxs = torch.argsort(distance, dim=1)
+
+        # closest_idxs = []
+        # for i, idxs in enumerate(sorted_idxs):
+        #     t2 = []
+        #     k = 0
+        #     for idx in idxs:
+        #         token = tokenizer.decoder[idx.item()]
+        #         if (set(token) - set(basic_char_for_writing)) == set():
+        #             t2.append(idx)
+        #             k += 1
+        #         if k == topk:
+        #             break
+        #     closest_idxs.append(t2)
+
+        # #sorted_idxs = sorted_idxs[:, :topk]
+
+        # for m, idxs in enumerate(closest_idxs):
+        #     words = [tokenizer.decoder[idx.item()] for idx in idxs]
+        #     dist = [f"{distance[m, idx].item():.4f}" for idx in idxs]
+        #     print(f"{m+1}: {words} {dist}")
+
+print("Done")

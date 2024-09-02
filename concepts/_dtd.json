@@ -2,8 +2,8 @@
     "banded": [
         "pattern",
         "bands",
-        "colors",
-        "curves"
+        "widths",
+        "colors"
     ],
     "blotchy": [
         "surface",
@@ -13,9 +13,9 @@
     ],
     "braided": [
         "strands",
-        "pattern",
         "material",
-        "pattern"
+        "pattern",
+        "interlocking"
     ],
     "bubbly": [
         "bumps",
@@ -45,13 +45,13 @@
         "surface",
         "cracks",
         "sizes",
-        "depth"
+        "debris"
     ],
     "crosshatched": [
         "lines",
         "grid",
         "thicknesses",
-        "colors"
+        "texture"
     ],
     "crystalline": [
         "pattern",
@@ -68,32 +68,32 @@
     "fibrous": [
         "view",
         "strands",
-        "reflecting",
+        "reflection",
         "surface"
     ],
     "flecked": [
         "pieces",
         "colors",
         "surface",
-        "texture"
+        "roughness"
     ],
     "freckled": [
         "spots",
         "distribution",
         "color",
-        "shade"
+        "skin"
     ],
     "frilly": [
         "patterns",
         "materials",
-        "appearance",
-        "colors"
+        "lightness",
+        "decoration"
     ],
     "gauzy": [
         "fabric",
         "feel",
         "appearance",
-        "colors"
+        "lace"
     ],
     "grid": [
         "pattern",
@@ -111,11 +111,11 @@
         "pattern",
         "color",
         "surface",
-        "glossiness"
+        "shape"
     ],
     "interlaced": [
         "lines",
-        "perpendicular",
+        "intersections",
         "thicknesses",
         "colors"
     ],
@@ -129,11 +129,11 @@
         "pattern",
         "materials",
         "colors",
-        "decoration"
+        "use"
     ],
     "lined": [
         "lines",
-        "curved",
+        "shapes",
         "colors",
         "thicknesses"
     ],
@@ -145,15 +145,15 @@
     ],
     "matted": [
         "pattern",
-        "surface",
+        "relief",
         "texture",
-        "appearance"
+        "shine"
     ],
     "meshed": [
         "pattern",
         "shapes",
-        "size",
-        "symmetry"
+        "spacing",
+        "design"
     ],
     "paisley": [
         "pattern",
@@ -163,21 +163,21 @@
     ],
     "perforated": [
         "holes",
+        "surface",
         "pattern",
-        "material",
         "appearance"
     ],
     "pitted": [
-        "surface",
         "depressions",
-        "texture",
-        "finish"
+        "surface",
+        "finish",
+        "roughness"
     ],
     "pleated": [
         "folds",
-        "creases",
         "fabric",
-        "surface"
+        "surface",
+        "appearance"
     ],
     "polka-dotted": [
         "dots",
@@ -189,7 +189,7 @@
         "holes",
         "surface",
         "areas",
-        "density"
+        "texture"
     ],
     "potholed": [
         "holes",
@@ -204,10 +204,10 @@
         "luster"
     ],
     "smeared": [
-        "colors",
         "appearance",
-        "blur",
-        "streaks"
+        "colors",
+        "streaks",
+        "blurriness"
     ],
     "spiralled": [
         "pattern",
@@ -229,15 +229,15 @@
     ],
     "stratified": [
         "layers",
-        "materials",
+        "material",
         "thicknesses",
         "colors"
     ],
     "striped": [
         "bands",
         "pattern",
-        "direction",
-        "colors"
+        "directions",
+        "widths"
     ],
     "studded": [
         "bumps",
@@ -249,13 +249,13 @@
         "pattern",
         "surface",
         "color",
-        "finish"
+        "gloss"
     ],
     "veined": [
         "pattern",
+        "lines",
         "contrast",
-        "appearance",
-        "dimension"
+        "appearance"
     ],
     "waffled": [
         "lines",
@@ -279,6 +279,6 @@
         "pattern",
         "angles",
         "lines",
-        "movement"
+        "energy"
     ]
 }

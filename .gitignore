@@ -134,3 +134,7 @@ data/
 debug.sh
 __MACOSX/
 sbatch/slogs
+wandb/
+output*
+*.png
+.vscode/

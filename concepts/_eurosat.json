@@ -3,31 +3,31 @@
         "fields",
         "rows",
         "colors",
-        "crops"
+        "plants"
     ],
     "Forest": [
         "area",
         "trees",
         "leaves",
-        "plants"
+        "land"
     ],
     "Herbaceous Vegetation Land": [
         "land",
         "plants",
-        "conditions",
-        "grass"
+        "grass",
+        "conditions"
     ],
     "Highway or Road": [
         "line",
         "surface",
-        "curves",
+        "curve",
         "pavement"
     ],
     "Industrial Buildings": [
         "activity",
         "buildings",
-        "structures",
-        "evidence"
+        "evidence",
+        "structures"
     ],
     "Pasture Land": [
         "vegetation",
@@ -45,18 +45,18 @@
         "structures",
         "shape",
         "groups",
-        "clusters"
+        "buildings"
     ],
     "River": [
-        "water",
         "line",
+        "water",
         "vegetation",
-        "shape"
+        "winding"
     ],
     "Sea or Lake": [
         "water",
-        "body",
         "color",
-        "size"
+        "body",
+        "lake"
     ]
 }
