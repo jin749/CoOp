@@ -73,8 +73,7 @@ class PromptLearner(nn.Module):
 
 
         ####
-        
-        n_adj_token = 2
+        n_adj_token = 4
         n_concept = 4
         n_adj_ctx = n_adj_token * n_concept  
         cfg.TRAINER.COOP["N_ADJ_TOKEN"] = n_adj_token

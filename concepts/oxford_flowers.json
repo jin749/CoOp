@@ -235,8 +235,7 @@
         "stem",
         "heart",
         "leaves",
-        "tips",
-        "leaves"
+        "tips"
     ],
     "sweet william": [
         "plant",
@@ -257,7 +256,6 @@
     "garden phlox": [
         "plant",
         "stems",
-        "flowers",
         "flowers",
         "blooms",
         "leaves"
@@ -306,14 +304,14 @@
         "herb",
         "leaves",
         "flowers",
-        "flowers",
         "stems",
         "smell"
     ],
     "siam tulip": [
         "petals",
-        "petals",
-        "ovary"
+        "flowers",
+        "ovary",
+        "leaves"
     ],
     "lenten rose": [
         "plant",

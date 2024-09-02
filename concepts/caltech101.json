@@ -1,25 +1,25 @@
 {
-    "Airplane": [
+    "airplane": [
         "body",
         "engines",
         "cockpit",
         "control surfaces",
         "gear"
     ],
-    "Face": [
+    "face": [
         "nose",
         "eyes",
         "hair",
         "mouth",
         "expressions"
     ],
-    "Motorbike": [
+    "motorbike": [
         "frame",
         "pipes",
         "seat",
         "lights"
     ],
-    "Leopard": [
+    "leopard": [
         "body",
         "fur",
         "tail",
