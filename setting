@@ -1,0 +1,72 @@
+tmux new -s coop1
+tmux attach -t coop11
+cd /hdd/hdd3/jsh/coop_main
+conda activate coop
+clear
+
+CUDA_VISIBLE_DEVICES=0 bash scripts/coop/main.sh dtd vit_b32_ep50 end 16 1 True
+CUDA_VISIBLE_DEVICES=0 bash scripts/coop/main.sh dtd vit_b32_ep100 end 16 2 True
+CUDA_VISIBLE_DEVICES=0 bash scripts/coop/main.sh dtd vit_b32_ep100 end 16 4 True
+CUDA_VISIBLE_DEVICES=0 bash scripts/coop/main.sh dtd vit_b32 end 16 8 True
+CUDA_VISIBLE_DEVICES=0 bash scripts/coop/main.sh dtd vit_b32 end 16 16 True
+
+export CUDA_VISIBLE_DEVICES=0 && nctx=8
+bash scripts/coop/main.sh dtd vit_b32_ep50 end ${nctx} 1 True & bash scripts/coop/main.sh dtd vit_b32_ep100 end ${nctx} 2 True & bash scripts/coop/main.sh dtd vit_b32_ep100 end ${nctx} 4 True & bash scripts/coop/main.sh dtd vit_b32 end ${nctx} 8 True & bash scripts/coop/main.sh dtd vit_b32 end ${nctx} 16 True &
+
+CUDA_VISIBLE_DEVICES=2 bash scripts/coop/main.sh eurosat vit_b32_ep50 end 16 1 True
+CUDA_VISIBLE_DEVICES=2 bash scripts/coop/main.sh eurosat vit_b32_ep100 end 16 2 True
+CUDA_VISIBLE_DEVICES=2 bash scripts/coop/main.sh eurosat vit_b32_ep100 end 16 4 True
+CUDA_VISIBLE_DEVICES=2 bash scripts/coop/main.sh eurosat vit_b32 end 16 8 True
+CUDA_VISIBLE_DEVICES=2 bash scripts/coop/main.sh eurosat vit_b32 end 16 16 True
+
+export CUDA_VISIBLE_DEVICES=1 && nctx=8
+bash scripts/coop/main.sh eurosat vit_b32_ep50 end ${nctx} 1 True & bash scripts/coop/main.sh eurosat vit_b32_ep100 end ${nctx} 2 True & bash scripts/coop/main.sh eurosat vit_b32_ep100 end ${nctx} 4 True & bash scripts/coop/main.sh eurosat vit_b32 end ${nctx} 8 True & bash scripts/coop/main.sh eurosat vit_b32 end ${nctx} 16 True & 
+
+
+CUDA_VISIBLE_DEVICES=1 bash scripts/coop/main.sh oxford_pets vit_b32_ep50 end 16 1 True
+CUDA_VISIBLE_DEVICES=1 bash scripts/coop/main.sh oxford_pets vit_b32_ep100 end 16 2 True
+CUDA_VISIBLE_DEVICES=1 bash scripts/coop/main.sh oxford_pets vit_b32_ep100 end 16 4 True
+CUDA_VISIBLE_DEVICES=1 bash scripts/coop/main.sh oxford_pets vit_b32 end 16 8 True
+CUDA_VISIBLE_DEVICES=1 bash scripts/coop/main.sh oxford_pets vit_b32 end 16 16 True
+
+export CUDA_VISIBLE_DEVICES=2 && nctx=8
+bash scripts/coop/main.sh oxford_pets vit_b32_ep50 end ${nctx} 1 True & bash scripts/coop/main.sh oxford_pets vit_b32_ep100 end ${nctx} 2 True & bash scripts/coop/main.sh oxford_pets vit_b32_ep100 end ${nctx} 4 True & bash scripts/coop/main.sh oxford_pets vit_b32 end ${nctx} 8 True & bash scripts/coop/main.sh oxford_pets vit_b32 end ${nctx} 16 True & 
+
+
+CUDA_VISIBLE_DEVICES=3 bash scripts/coop/main.sh caltech101 vit_b32_ep50 end 16 1 True
+CUDA_VISIBLE_DEVICES=3 bash scripts/coop/main.sh caltech101 vit_b32_ep100 end 16 2 True
+CUDA_VISIBLE_DEVICES=3 bash scripts/coop/main.sh caltech101 vit_b32_ep100 end 16 4 True
+CUDA_VISIBLE_DEVICES=3 bash scripts/coop/main.sh caltech101 vit_b32 end 16 8 True
+CUDA_VISIBLE_DEVICES=3 bash scripts/coop/main.sh caltech101 vit_b32 end 16 16 True
+
+export CUDA_VISIBLE_DEVICES=3 && nctx=8
+bash scripts/coop/main.sh caltech101 vit_b32_ep50 end ${nctx} 1 True & bash scripts/coop/main.sh caltech101 vit_b32_ep100 end ${nctx} 2 True & bash scripts/coop/main.sh caltech101 vit_b32_ep100 end ${nctx} 4 True & bash scripts/coop/main.sh caltech101 vit_b32 end ${nctx} 8 True & bash scripts/coop/main.sh caltech101 vit_b32 end ${nctx} 16 True & 
+
+CUDA_VISIBLE_DEVICES=4 bash scripts/coop/main.sh oxford_flowers vit_b32_ep50 end 16 1 True
+CUDA_VISIBLE_DEVICES=4 bash scripts/coop/main.sh oxford_flowers vit_b32_ep100 end 16 2 True
+CUDA_VISIBLE_DEVICES=4 bash scripts/coop/main.sh oxford_flowers vit_b32_ep100 end 16 4 True
+CUDA_VISIBLE_DEVICES=4 bash scripts/coop/main.sh oxford_flowers vit_b32 end 16 8 True
+CUDA_VISIBLE_DEVICES=4 bash scripts/coop/main.sh oxford_flowers vit_b32 end 16 16 True
+
+export CUDA_VISIBLE_DEVICES=4 && nctx=8
+bash scripts/coop/main.sh oxford_flowers vit_b32_ep50 end ${nctx} 1 True & bash scripts/coop/main.sh oxford_flowers vit_b32_ep100 end ${nctx} 2 True & bash scripts/coop/main.sh oxford_flowers vit_b32_ep100 end ${nctx} 4 True & bash scripts/coop/main.sh oxford_flowers vit_b32 end ${nctx} 8 True & bash scripts/coop/main.sh oxford_flowers vit_b32 end ${nctx} 16 True &
+
+
+CUDA_VISIBLE_DEVICES=4 bash scripts/coop/main.sh fgvc_aircraft vit_b32_ep50 end 16 1 True
+CUDA_VISIBLE_DEVICES=4 bash scripts/coop/main.sh fgvc_aircraft vit_b32_ep100 end 16 2 True
+CUDA_VISIBLE_DEVICES=4 bash scripts/coop/main.sh fgvc_aircraft vit_b32_ep100 end 16 4 True
+CUDA_VISIBLE_DEVICES=4 bash scripts/coop/main.sh fgvc_aircraft vit_b32 end 16 8 True
+CUDA_VISIBLE_DEVICES=4 bash scripts/coop/main.sh fgvc_aircraft vit_b32 end 16 16 True
+
+export CUDA_VISIBLE_DEVICES=5 && nctx=8
+bash scripts/coop/main.sh fgvc_aircraft vit_b32_ep50 end ${nctx} 1 True & bash scripts/coop/main.sh fgvc_aircraft vit_b32_ep100 end ${nctx} 2 True & bash scripts/coop/main.sh fgvc_aircraft vit_b32_ep100 end ${nctx} 4 True & bash scripts/coop/main.sh fgvc_aircraft vit_b32 end ${nctx} 8 True & bash scripts/coop/main.sh fgvc_aircraft vit_b32 end ${nctx} 16 True &
+
+CUDA_VISIBLE_DEVICES=0 bash scripts/coop/main.sh stanford_cars vit_b32_ep50 end 16 1 True
+CUDA_VISIBLE_DEVICES=0 bash scripts/coop/main.sh stanford_cars vit_b32_ep100 end 16 2 True
+CUDA_VISIBLE_DEVICES=0 bash scripts/coop/main.sh stanford_cars vit_b32_ep100 end 16 4 True
+CUDA_VISIBLE_DEVICES=0 bash scripts/coop/main.sh stanford_cars vit_b32 end 16 8 True
+CUDA_VISIBLE_DEVICES=0 bash scripts/coop/main.sh stanford_cars vit_b32 end 16 16 True
+
+export CUDA_VISIBLE_DEVICES=8 && nctx=8
+bash scripts/coop/main.sh stanford_cars vit_b32_ep50 end ${nctx} 1 True & bash scripts/coop/main.sh stanford_cars vit_b32_ep100 end ${nctx} 2 True & bash scripts/coop/main.sh stanford_cars vit_b32_ep100 end ${nctx} 4 True & bash scripts/coop/main.sh stanford_cars vit_b32 end ${nctx} 8 True & bash scripts/coop/main.sh stanford_cars vit_b32 end ${nctx} 16 True &
+

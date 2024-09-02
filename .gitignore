@@ -132,3 +132,5 @@ dmypy.json
 output/
 data/
 debug.sh
+wandb/
+output*
