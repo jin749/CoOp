@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Bash Script Debug",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/train.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--root", "/hdd/hdd3/jsh/DATA",
+                "--seed", "4",
+                "--trainer", "CoOp",
+                "--dataset-config-file", "configs/datasets/oxford_flowers.yaml",
+                "--config-file", "configs/trainers/CoOp/vit_b32_ep1.yaml",
+                "--output-dir", "output/oxford_flowers/CoOp/vit_b32_ep1_16shots/nctx16_cscTrue_ctpend/seed4",
+                "TRAINER.COOP.N_CTX", "16",
+                "TRAINER.COOP.CSC", "True",
+                "TRAINER.COOP.CLASS_TOKEN_POSITION", "end",
+                "DATASET.NUM_SHOTS", "16"
+            ],
+            "pythonPath": "/home/jsh/.conda/envs/coop/bin/python",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        }
+    ]
+}

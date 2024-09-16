@@ -149,20 +149,22 @@ def main(args):
     if not args.no_train:
         trainer.train()
 
-    wandb_logging = True
+    wandb_logging = False
     if wandb_logging is True:
         import wandb
-        import os
         config = trainer.cfg.TRAINER.COOP
+        del config['CTX_INIT']
+        del config['PREC']
         config["DATASET"] = trainer.cfg.DATASET.NAME
+        config["BACKBONE"] = trainer.cfg.MODEL.BACKBONE.NAME
         config["NUM_SHOTS"] = trainer.cfg.DATASET.NUM_SHOTS
         config["MAX_EPOCH"] = trainer.cfg.OPTIM.MAX_EPOCH
-        config["NOTE"] = "vanilla coop"
+        config["NOTE"] = "vanilla"
         wandb.init(
             project = "coop_vanilla",
             entity = "jin749",
-            group = os.path.join(*trainer.cfg.OUTPUT_DIR.split(os.path.sep)[1:-1]),
-            name = trainer.cfg.OUTPUT_DIR,
+            group = str(list(config.values())),
+            name = str(list(config.values())) + '_' + str(trainer.cfg.SEED),
             config=config
         )
         acc = trainer.test()
