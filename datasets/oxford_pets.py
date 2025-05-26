@@ -48,6 +48,9 @@ class OxfordPets(DatasetBase):
                 with open(preprocessed, "wb") as file:
                     pickle.dump(data, file, protocol=pickle.HIGHEST_PROTOCOL)
 
+        cfg.defrost()
+        cfg.DATASET.ORIGINAL_NUM_CLASSES = self.get_num_classes(train) ## jin
+        cfg.freeze()
         subsample = cfg.DATASET.SUBSAMPLE_CLASSES
         train, val, test = self.subsample_classes(train, val, test, subsample=subsample)
 

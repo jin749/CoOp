@@ -27,6 +27,9 @@ import trainers.coop
 import trainers.cocoop
 import trainers.zsclip
 
+import pandas as pd
+import numpy as np
+import os
 
 def print_args(args, cfg):
     print("***************")
@@ -135,6 +138,13 @@ def main(args):
     if torch.cuda.is_available() and cfg.USE_CUDA:
         torch.backends.cudnn.benchmark = True
 
+
+    # ### save cfg
+    # import pickle
+    # with open(cfg.OUTPUT_DIR + "/cfg.pkl", "wb") as f:
+    #     pickle.dump(cfg, f)
+    # raise Exception("cfg saved")
+
     print_args(args, cfg)
     print("Collecting env info ...")
     print("** System info **\n{}\n".format(collect_env_info()))
@@ -143,7 +153,39 @@ def main(args):
 
     if args.eval_only:
         trainer.load_model(args.model_dir, epoch=args.load_epoch)
+        # trainer.evaluator.set_wandb()
         trainer.test()
+        
+        results = trainer.evaluator.results
+        # filename = cfg.TRAINER.NAME + ".csv"
+        filename = cfg.TRAINER.NAME+ "_all2all" + ".csv"
+        # load results from csv file
+        if os.path.exists(filename):
+            df = pd.read_csv(filename)
+        else:
+            df = pd.DataFrame(columns=["dataset", "subset", "1", "2", "3", "mean", "std"])
+        
+        seed = str(cfg.SEED)
+        subsets = [cfg.DATASET.SUBSAMPLE_CLASSES] if cfg.DATASET.SUBSAMPLE_CLASSES != "all" else ["all", "base*", "new*"]
+        for subset in subsets:
+            if results[subset] is not None:
+                if df[(df["dataset"] == cfg.DATASET.NAME) & (df["subset"] == subset)].empty:
+                    df.loc[len(df)] = [cfg.DATASET.NAME, subset, None, None, None, None, None]
+                    
+                condition = (df["dataset"] == cfg.DATASET.NAME) & (df["subset"] == subset)
+                df.loc[condition, seed] = results[subset]
+                assert len(df[condition]) == 1, "df[condition] should be 1 row"    
+                
+                # if all seed are filled, calculate mean and std
+                result_stat = df[condition][['1', '2', '3']]
+                if result_stat.notnull().all(axis=1).any():
+                    df.loc[condition, "mean"] = result_stat.mean(axis=1).values[0]
+                    df.loc[condition, "std"] = result_stat.std(axis=1).values[0]
+        
+        # save results to csv file
+        df.to_csv(filename, index=False)        
+        
+        
         return
 
     if not args.no_train:

@@ -133,4 +133,4 @@ output/
 data/
 debug.sh
 wandb/
-output*
+*.csv
